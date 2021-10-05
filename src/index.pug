@@ -1,0 +1,24 @@
+//- используем макет(шаблон)main.pug в качестве основы
+extends basis/layout/main
+
+//- опишем константы для текущей страницы
+block variables
+  - var title = 'Colors & Type'
+
+block content
+  .content-wrapper_two-columns
+    .wrapper-group
+      mixin item-square(somename, descr, value)
+        .wrapper-items
+          div(class!=attributes.somename).square
+          .square__text-description
+            p=descr
+            span=value
+
+      +item-square(square_shade100, 'Dark Shade 100%', '#1F2041')(somename!='square_shade100')
+      +item-square(square_shade75, 'Dark Shade 75%', '#1F2041')(somename!='square_shade75')
+      +item-square(square_shade50, 'Dark Shade 50%', '#1F2041')(somename!='square_shade50')
+      +item-square(square_shade25, 'Dark Shade 25%', '#1F2041')(somename!='square_shade25')
+      +item-square(square_shade5, 'Dark Shade 5%', '#1F2041')(somename!='square_shade5')
+      +item-square(square_purple, 'Purple', '#BC9CFF')(somename!='square_purple')
+      +item-square(square_green, 'Green', '#6FCF97')(somename!='square_green')

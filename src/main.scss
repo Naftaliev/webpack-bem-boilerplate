@@ -1,0 +1,23 @@
+// basis
+@import 'basis/header/header.scss';
+@import 'basis/main/main.scss';
+
+// blocks
+@import 'blocks/logo/logo.scss';
+@import 'blocks/square/square.scss';
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  // color: red;
+}
+
+// времменные стили видеть границы блоков(для dev)
+.borders {
+  border: dashed 1px green;
+}

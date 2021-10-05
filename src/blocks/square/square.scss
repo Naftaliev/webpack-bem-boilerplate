@@ -1,0 +1,28 @@
+@import 'fonts/fonts.scss';
+
+.square {
+  width: 70px;
+  height: 70px;
+  border-radius: 6px;
+}
+.square_shade100 {
+  background: rgba(31,32,65, 1);
+}
+.square_shade75 {
+  background: rgba(31,32,65, 0.75);
+}
+.square_shade50 {
+  background: rgba(31,32,65, 0.5);
+}
+.square_shade25 {
+  background: rgba(31,32,65, 0.25);
+}
+.square_shade5 {
+  background: rgba(31, 32, 65, 0.05);
+}
+.square_purple {
+  background: #BC9CFF;
+}
+.square_green {
+  background: #6FCF97;
+}
